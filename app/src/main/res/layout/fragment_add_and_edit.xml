@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".AddAndEditFragment">
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="THÊM SINH VIÊN MỚI"
+        android:textColor="#1A73E8"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_hoten"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:hint="Họ tên"
+        android:textColorHint="#888888"
+        android:textColor="#333333" />
+
+    <EditText
+        android:id="@+id/edit_mssv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_hoten"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:hint="MSSV"
+        android:textColorHint="#888888"
+        android:textColor="#333333" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_mssv"
+        android:paddingHorizontal="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Lưu thông tin"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button_submit"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_mssv"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/button_submit"
+        android:text="Hủy bỏ"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button_cancel"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
