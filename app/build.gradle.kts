@@ -1,7 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("kotlin-kapt") // Thêm plugin kotlin-kapt
+    // id("kotlin-kapt") // Thêm plugin kotlin-kapt
+
 }
 
 android {
@@ -49,7 +50,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("androidx.sqlite:sqlite:2.1.0")
-    implementation("androidx.room:room-runtime:2.4.3")
-    kapt("androidx.room:room-compiler:2.4.3") // Thêm dependency cho kapt
-    implementation("androidx.room:room-ktx:2.4.3") // Thêm dependency room-ktx
+    // implementation("androidx.room:room-runtime:2.4.3")
+    // kapt("androidx.room:room-compiler:2.4.3") // Thêm dependency cho kapt
+    // implementation("androidx.room:room-ktx:2.4.3") // Thêm dependency room-ktx
 }
